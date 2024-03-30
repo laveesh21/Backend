@@ -5,7 +5,7 @@ Currently i am working on NodeJS project
 
 
 ## List of projects
-- [KnoxBackend](https://github.com/laveesh21/Backend/KnoxBackend)
+- [KnoxBackend](https://github.com/laveesh21/Backend/tree/main/KnoxBackend)
 
 
 ## KnoxBackend
