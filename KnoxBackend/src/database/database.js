@@ -1,8 +1,6 @@
 import mongoose from "mongoose";
 import { DB_NAME } from "../constants.js";
 
-// const temp = "mongodb+srv://laveeshtomar:uchihasasuke@cluster0.az7cy7e.mongodb.net"
-
 const connectDB = async ()=>{
     try{
         const connectStatus =  mongoose.connect(`${process.env.MONGODB_URL}`)
