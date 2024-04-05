@@ -39,5 +39,6 @@ const viderSchema = new Schema(
     }
 )
 
+viderSchema.plugin(mongooseAggregatePaginate)
 
 export const Video = mongoose.model("Video", viderSchema)
