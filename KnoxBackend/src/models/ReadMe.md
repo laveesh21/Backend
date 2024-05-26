@@ -6,6 +6,6 @@ We are using plugins:
 3. jwt
 
 We will use jwt and bcrypt in user file because we want to encrypt our passwords.
-Direct encryption is not possible so we need middleware hooks
+Direct encryption is not possible so we need middleware hooks (pre, post)
 
 Refresh Token is stored in database

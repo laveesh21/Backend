@@ -36,7 +36,8 @@ const viderSchema = new Schema(
             ref: "User"
         }
 
-    }
+    },
+    {timestamps: true}
 )
 
 viderSchema.plugin(mongooseAggregatePaginate)

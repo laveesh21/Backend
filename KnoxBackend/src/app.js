@@ -7,6 +7,7 @@ const app = Express()
 app.use(Express.json({limit: "16kb"}))
 app.use(Express.urlencoded({extended: true}))
 app.use(Express.static("public"))
+app.use(Express.json())
 app.use(cookieParser())
 app.use(cors(
     {
@@ -15,14 +16,11 @@ app.use(cors(
     }
 ))
 
+app.use(Express.json());
+app.use(Express.urlencoded({ extended: true }));
+
+import UserRouter from "./routes/user.routes.js"
+app.use('/api/v1/users',UserRouter)
 
 
-
-
-app.get('',(req, res)=>{
-
-})
-
-
-
-export { app }
+export default app 
